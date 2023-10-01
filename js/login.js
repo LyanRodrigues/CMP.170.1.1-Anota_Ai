@@ -171,7 +171,7 @@ function login() {
         clearInput()
         window.open("main.html","_self")
     } else {
-        alert("Informe os dados de autenticação")
+        alert("usuario nao cadastrado")
     }
 }
 
