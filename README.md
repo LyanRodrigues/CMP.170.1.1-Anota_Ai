@@ -2,7 +2,7 @@
 
 Primeira avaliação Programação Web I
 
-Formato ✔️<br>
+<h1>Formato</h1> ✔️<br>
 
 ✔️ no rodapé deverá constar o nome de quem faz parte da equipe.<br>
 ✔️ Nesta primeira página deverá constar um menu, com alguns itens, onde estes itens não precisarão apontar para lugar algum com exceção do item “LOGIN” que deverá estar ativo e apontar para a segunda página Web. <br>
@@ -14,7 +14,7 @@ Formato ✔️<br>
 ✔️ O botão somente realizará esta operação caso os dois campos acima tenham alguma informação digitada pelo usuário, caso contrário um alerta deverá mostrar “Informe os dados de autenticação”.<br>
 
    
-Entrega<br>
+<h1>Entrega</h1><br>
 
 Os arquivos fonte (HTML, CSS e JS) deverão ser colocados no espaço para entrega no AVA até o dia 3/10/2023.<br>
 
