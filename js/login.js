@@ -106,17 +106,17 @@ function registerUser() {
         password: registerPassword
     }
     if (JSON.parse(sessionStorage.getItem("user")) != null && JSON.parse(sessionStorage.getItem("user")).username == registerUsername) {
-        alert("Não foi possivel efetuar o cadastro")
+        alert("Informe os dados de autenticação")
         clearInput()
         return
     }
     if (registerUsername.length < 4 || !/^[a-zA-Zà-úÀ-Ú0-9_]{4,32}$/.test(registerUsername)) {
-        alert("Não foi possivel efetuar o cadastro")
+        alert("Informe os dados de autenticação")
         clearInput()
         return
     }
     if (registerPassword.length < 8 || !/^[a-zA-Z0-9_]{8,255}$/.test(registerPassword)) {
-        alert("Não foi possivel efetuar o cadastro")
+        alert("Informe os dados de autenticação")
         clearInput()
         return
     }
@@ -127,7 +127,7 @@ function registerUser() {
             return
         }
         else if (registerPassword.length < 8 || !/^[a-zA-Z0-9_]{8,255}$/.test(registerPassword)) {
-            alert("Não foi possivel efetuar o cadastro")
+            alert("Informe os dados de autenticação")
             clearInput()
             return
         }
@@ -171,7 +171,7 @@ function login() {
         clearInput()
         window.open("main.html","_self")
     } else {
-        alert("Não foi possivel efetuar o login")
+        alert("Informe os dados de autenticação")
     }
 }
 
