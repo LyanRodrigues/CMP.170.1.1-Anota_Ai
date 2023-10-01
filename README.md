@@ -1,5 +1,5 @@
 # CMP.170.1.1-Anota_Ai
-<!–
+
 Primeira avaliação Programação Web I
 
 Formato
@@ -35,7 +35,6 @@ Considerações
  - Nesta terceira página deverá haver um form que deverá conter 6 campos fictícios para serem preenchidos. 
  - Pelo menos 3 campos deverão ser de um tipo diferente de entrada (radiogroup, checkbox, datepicker, etc.).
  - Cada campo deverá ter um label respectivo, e no final do formulário um botão de submit para enviar os dados.
- - Nesta tela, próximo ao cabeçalho, deverá existir um campo do tipo <input type=”radio”> ou <select></select>, onde haverá duas opções para o usuário escolher:
+ - Nesta tela, próximo ao cabeçalho, deverá existir um campo do tipo '<input type=”radio”>' ou '<select>''</select>', onde haverá duas opções para o usuário escolher:
     - Normal: nesta opção a página estará como na forma original.
-    - Custom: nesta opção a cor de fundo da página, o tipo da fonte e a cor de fundo do texto das tags <p> e <div> deverão mudar em relação à forma original.
-–>
+    - Custom: nesta opção a cor de fundo da página, o tipo da fonte e a cor de fundo do texto das tags '<p>' e '<div>' deverão mudar em relação à forma original.
