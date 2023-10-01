@@ -2,7 +2,7 @@
 
 Primeira avaliação Programação Web I
 
-<h1>Formato</h1> ✔️<br>
+<h1>Formato</h1><br>
 
 ✔️ no rodapé deverá constar o nome de quem faz parte da equipe.<br>
 ✔️ Nesta primeira página deverá constar um menu, com alguns itens, onde estes itens não precisarão apontar para lugar algum com exceção do item “LOGIN” que deverá estar ativo e apontar para a segunda página Web. <br>
@@ -18,7 +18,7 @@ Primeira avaliação Programação Web I
 
 Os arquivos fonte (HTML, CSS e JS) deverão ser colocados no espaço para entrega no AVA até o dia 3/10/2023.<br>
 
-Considerações<br>
+<h1>Considerações</h1><br>
 
 ✔️ Os estilos deverão estar em um arquivo CSS em separado, para as duas páginas acessarem na seção <HEAD> das páginas.<br>
 ✔️ A parte JavaScript das páginas também deverão estar armazenadas em um arquivo JS em separado, referenciados na seção <HEAD> das páginas.<br>
