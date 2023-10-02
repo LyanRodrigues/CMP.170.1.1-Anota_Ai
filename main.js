@@ -1,3 +1,30 @@
+
+// Add this function in your script
+function changePostColor(event) {
+  var selectedColor = event.target.value;
+
+  // Create a new post with the selected color
+  let newPost = getPostFormData();
+  newPost.color = selectedColor;
+
+  // Update the color in the UI
+  let postitArea = document.getElementById('postit-area');
+  postitArea.innerHTML += `
+    <div class="post-it" style="background-color:${selectedColor}">
+      <h4>${newPost.title}</h4>
+      <p>${newPost.text}</p>
+    </div>
+  `;
+
+  // Save the new post to localStorage
+  let posts = JSON.parse(localStorage.getItem(postsKey)) || [];
+  posts.push(newPost);
+  localStorage.setItem(postsKey, JSON.stringify(posts));
+
+  // Optionally, clear the form or perform other actions
+  clearForm(document.getElementById('form-post'));
+  updateTable();
+}
 // Chave para array de posts no localStorage
 const postsKey = 'posts';
 let postRemovido = false;
