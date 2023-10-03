@@ -1,18 +1,271 @@
-body, html {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
+* {
+	padding: 0;
+	margin: 0;
+}
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #3b5c81;
+    /* Darker background color for the header */
+    z-index: 999;
+    /* Adjust the z-index if needed */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* Create space between elements */
+    padding: 10px 20px;
+    /* Add padding around the header content */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Add a subtle shadow */
+    
 }
 
-body {
-    background-color: #3b5c81;
-    color: #323232;
+/* Style the circular logo */
+.logo {
+    width: 50px;
+    height: 50px;
+    background-color: #f1f1f1;
+    /* Green color for the circular logo */
+    border-radius: 50%;
+    /* Make it circular */
+    margin-right: 20px;
+    /* Add space between the logo and other header content */
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
 }
 
+.logo img {
+    width: 80%;
+    /* Adjust the size of the logo image */
+    height: auto;
+}
+
+/* Style the header text */
+.header-text {
+    color: #bbbbbb;
+    /* Text color for the header text */
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Style the user square */
+.user-square {
+    width: 50px;
+    height: 50px;
+    background-color: #f1f1f1;
+    /* Blue color for the user square */
+    border-radius: 5px;
+    /* Rounded corners */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Style the user image inside the square */
+.user-image {
+    width: 80%;
+    /* Adjust the size of the user image */
+    height: auto;
+    border-radius: 50%;
+    /* Make it circular */
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    background-color: #3b5c81;
+}
+main {
+    margin-top: 100px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    flex: none;
+    flex-grow: 0;
+    padding: 70px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: -10px 0px 15px rgba(0, 0, 0, 0.1), 10px 0px 15px rgba(0, 0, 0, 0.1);
+    /* Sombra à esquerda (primeiro conjunto) e à direita (segundo conjunto) */
+}
+
+
+.frase {
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 50px;
+    line-height: 90px;
+    
+    text-align: center;
+
+    color: #ffffff;
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.titulo {
+    width: 305px;
+    height: 50px;
+    
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 64px;
+    text-align: center;
+    color: #3b5c81;
+}
+
+.textfield {
+    display: inline-block;
+    position: relative;
+    text-align: center;
+}
+
+.textfield input {
+    padding: 10px 5px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.textfield input#username,.textfield input#verifyUser {
+    margin-left: 7px;
+}
+
+.textfield#registerLogin {
+    display: inline-block;
+    position: relative;
+}
+
+.textfield#createNewPassword {
+    display: none;
+    position: relative;
+}
+
+.errorRegsLogin {
+    color: red;
+    font-size: 10px;
+    letter-spacing: 1px;
+    margin-top: 8px;
+    margin-bottom: 4px;
+    display: none;
+}
+
+button {
+    background: none;
+    color: #3d8bca;
+    margin-top: 25px;
+    
+    width: 10rem;
+    padding: 8px;
+    border-radius: 10px;
+    cursor: pointer;
+    
+}
+
+button:hover{
+    background-color: rgb(236, 236, 236);
+    color:  #51ceff;
+}
+
+button#senhaEsq {
+    color: #984aff;
+    font-size: 14px;
+    background: none;
+    border: none;
+    margin: 0;
+    padding-top: 10px;
+}
+
+button#changePsw {
+    color: black;
+    background: none;
+    margin-top: 10px;
+    width: 10rem;
+    padding: 8px;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+.link{
+    color: #984aff;
+    font-size: 14px;
+    background: none;
+    border: none;
+    margin: 0;
+    padding-top: 10px;
+    text-decoration: none;
+    text-align: center;
+}
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #3b5c81;
+    /* Darker background color for the footer */
+    color: #fff;
+    /* Text color for the footer */
+    padding: 10px;
+    /* Adjust padding as needed */
+    text-align: right;
+}
+
+
+footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    width: var(--screen-width);
+    height: 50px;
+    flex: none;
+    align-self: stretch;
+    flex-grow: 0;
+    box-shadow: 0px -4px 8px rgba(0, 0, 0, 0.1); /* Adiciona sombra na parte superior */
+}
+
+footer .textN {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 24px;
+    gap: 24px;
+    height: 42px;
+    background: var(--yellow);
+    border-radius: 100px;
+}
+
+footer a.nomes {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: var(--white);
+    text-decoration: none;
+}
+
+footer a.nomes:hover{
+    color:  rgb(35, 125, 141);
+}
+
+    
 form {
     background-color: white;
     padding: 20px;

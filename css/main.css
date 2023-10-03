@@ -95,6 +95,18 @@ main {
     /* Adjust padding as needed */
 }
 
+.titulo {
+    width: 300px;
+    height: 50px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 64px;
+    text-align: left;
+    color: #3b5c81;
+}
+
 /* Style the footer to fill the bottom */
 footer {
     position: fixed;
@@ -135,15 +147,16 @@ body {
     margin: 0;
     padding: 0;
     width: 200px;
-    background-color: #f1f1f1;
+    background-color:  #3b5c81;
     position: fixed;
     height: 100%;
     overflow: auto;
+    color: #fff;
 }
 
 .sidebar a {
     display: block;
-    color: black;
+    color: #fff;
     padding: 16px;
     text-decoration: none;
 }
@@ -154,8 +167,8 @@ body {
 }
 
 .sidebar a:hover:not(.active) {
-    background-color: #b8b8b8;
-    color: white;
+    background-color: #52759c;
+    color: #fff;
 }
 
 div.content {
@@ -177,6 +190,15 @@ div.content {
     div.content {
         margin-left: 0;
     }
+    main {
+        margin-left: 0px;
+        /* Create space between the sidebar and the main content */
+        padding: 20px;
+        /* Adjust padding as needed */
+    }
+    .container-postit-area {
+        gap: 0px;
+    }
 }
 
 @media screen and (max-width: 400px) {
@@ -184,22 +206,41 @@ div.content {
         text-align: center;
         float: none;
     }
+    .posts-recentes-comunidade {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #3b5c81;
+    /* Darker background color for the footer */
+    color: #fff;
+    /* Text color for the footer */
+    padding: 10px;
+    /* Adjust padding as needed */
+    text-align: right;
 }
 
 
 footer {
-	display: flex;
-	flex-direction: row;
-	justify-content: right;
-	align-items: center;
-	gap: 10px;
-	width: var(--screen-width);
-	height: 50px;
-	flex: none;
-	align-self: stretch;
-	flex-grow: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    width: var(--screen-width);
+    height: 50px;
+    flex: none;
+    align-self: stretch;
+    flex-grow: 0;
+    box-shadow: 0px -4px 8px rgba(0, 0, 0, 0.1); /* Adiciona sombra na parte superior */
 }
-
 
 footer .textN {
     display: flex;
@@ -228,6 +269,7 @@ footer a.nomes {
 footer a.nomes:hover{
     color:  rgb(35, 125, 141);
 }
+
 .container-postit-area {
 	display: flex;
 	flex-direction: row;
@@ -286,7 +328,7 @@ form .form-postit-buttons button {
 }
 
 #btn-postit {
-	color: rgb(0, 0, 0);
+	color: rgb(255, 255, 255);
 	background-color:#3d8bca ;
 }
 
@@ -302,6 +344,10 @@ form .form-postit-buttons button {
 
 #btn-voltar {
 	background-color: #3d8bca;
+}
+#btn-voltar:hover {
+	background-color:  rgb(35, 125, 141);
+    font-weight: bolder;
 }
 
 #btn-limpar:hover {
@@ -378,4 +424,41 @@ form .form-postit-buttons button {
 .post-it h4 {
 	text-align: center;
 	font-family: Arial, Helvetica, sans-serif;
+}
+
+
+button {
+    background: none;
+    color: #ffffff;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 10rem;
+    padding: 8px;
+    border-radius: 15px;
+    cursor: pointer;
+    border: 0px;
+}
+
+button:hover{
+    background-color: rgb(236, 236, 236);
+    color:  #ffffff;
+}
+
+button#senhaEsq {
+    color: #984aff;
+    font-size: 14px;
+    background: none;
+    border: none;
+    margin: 0;
+    padding-top: 10px;
+}
+
+button#changePsw {
+    color: rgb(255, 255, 255);
+    background: none;
+    margin-top: 10px;
+    width: 10rem;
+    padding: 8px;
+    border-radius: 10px;
+    display: inline-block;
 }

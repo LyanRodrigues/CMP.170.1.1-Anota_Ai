@@ -14,26 +14,25 @@
     
     <header>
         <a class="logo" href="main.html">
-            <img src="/media/writing.png" alt="Logo">
+            <img src="media/writing.png" alt="Logo">
         </a>
         <div class="frase">
             Anota Aí
         </div>
-        <div class="user-area">
-            <img src="/media/user.png" alt="Ícone do usuário">
-            <span id="username"><a href="login.html" style="text-decoration: none;">Logar</a></span>
-        </div>
+        <a class="user-square" href="formulario.html">
+            <img src="media/user.png" alt="User" class="user-image">
+        </a>
     </header>
     <div class="sidebar">
         <a href="main.html">Home</a>
         <a class="active" href="login.html">Login</a>
-        <a href="/sobre.html">Sobre nós</a>    
+        <a href="sobre.html">Sobre nós</a>    
     </div>
     <main>			
         
         <div class="container-postit-area">
             <section class="form-postit">
-                <h3>Anota Aí</h3>
+                <h3 class="titulo">Escreva sua nota</h3>
                 <form id="form-post" class="form-postit" method="POST">
                     <input id="inputTitle" type="text" maxlength="28" placeholder="Título">
                     <textarea id="inputText" maxlength="200" placeholder="Vou escrever sobre..."></textarea>
@@ -44,8 +43,6 @@
                             <option value="Times">Times</option>
                             <option value="Segoe UI">Segoe UI</option>
                         </select>
-                        <!-- Add this input in the form -->
-<input id="selectColor" class="select-color-box" type="color" onchange="changePostColor(event)">
 
                         <select id="selectColor" class="select-color-box" type="select">
                             <option value="Amarelo">Amarelo</option>
@@ -67,41 +64,11 @@
                 </form>
             </section>
             <section class="posts-recentes-comunidade">
-                <h2>Posts recentes da comunidade:</h2>
+                <h2 class="titulo">Notas recentes:</h2>
                 <div class="postit-area" id="postit-area"></div>
             </section>
         </div>
-          <!-- <section class="table-section">  -->
-            <!-- <div class="table-conector"> -->
-                <table class="content-table">
-                    <thead>
-                        <tr> 
-                            <th></th> 
-                            <!-- <th><img src="./assets/icons/unfold_more.svg" alt="Ordenação">Título</th>
-                            <th><img src="./assets/icons/unfold_more.svg" alt="Ordenação">Texto</th>
-                            <th><img src="./assets/icons/unfold_more.svg" alt="Ordenação">Usuário</th>
-                            <th><img src="./assets/icons/unfold_more.svg" alt="Ordenação">Fonte</th>
-                            <th><img src="./assets/icons/unfold_more.svg" alt="Ordenação">Cor</th> -->
-                        </tr>
-                    </thead>
-                     <tbody id="datatable"> 
-                    </tbody> 
-                <!-- </table> -->
-                <!-- <div class="tfoot">
-                    <p>Linhas por página</p>
-                    <select>
-                        <option value="1">10</option>
-                        <option value="2">25</option>
-                        <option value="3">50</option>
-                        <option value="4">100</option>
-                    </select>
-                    <p>1-10 de 100</p>
-                    <button><img src="./assets/icons/skip_left.svg" alt="Primeira página"></button>
-                    <button><img src="./assets/icons/arrow_left.svg" alt="Página anterior"></button>
-                    <button><img src="./assets/icons/arrow_right.svg" alt="Próxima página"></button>
-                    <button><img src="./assets/icons/skip_right.svg" alt="Última página"></button>
-                </div> -->
-            </div>
+          
         </section>
         <script>updateTable()</script>
     </main>
@@ -111,6 +78,7 @@
             <a class="nomes" href="https://github.com/danieldpa">Daniel de Paula</a>
             <a class="nomes" href="https://github.com/pablogsautner">Pablo Gabriel Sautner</a>
         </div>
+        <p style="margin-left: auto;">&copy; 2023 Anota Aí - Desenvolvido com ❤️.</p>
     </footer>
 </body>
 

@@ -5,25 +5,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sobre - Anota Aí</title>
-    <link rel="stylesheet" href="/css/main.css"> 
+    <link rel="stylesheet" href="css/main.css"> 
 </head>
 
 <body>
 
     <header>
-        <h1>Sobre o Anota Aí</h1>
+        <a class="logo" href="main.html">
+            <img src="media/writing.png" alt="Logo">
+        </a>
+        <div class="frase">
+            Anota Aí
+        </div>
+        <a class="user-square" href="formulario.html">
+            <img src="media/user.png" alt="User" class="user-image">
+        </a>
     </header>
+    <div class="sidebar">
+        <a href="main.html">Home</a>
+        <a href="login.html">Login</a>
+        <a class="active" href="sobre.html">Sobre nós</a>    
+    </div>
 
     <main>
         <section id="introducao">
-            <h2>O que é o Anota Aí?</h2>
+            <h2 class="titulo">O que é o Anota Aí?</h2>
             <p>
                 "Anota Aí" é sua plataforma confiável e amigável para armazenar, organizar e acessar suas ideias a qualquer momento e lugar. Sabemos o quão valiosas são suas centelhas de criatividade, e estamos aqui para garantir que elas nunca se percam no turbilhão do dia a dia.
             </p>
         </section>
 
         <section id="caracteristicas">
-            <h2>Características</h2>
+            <h2 class="titulo">Características</h2>
             <p>
                 O Anota Aí é mais do que um simples bloco de notas online. É um espaço pessoal, intuitivo e seguro, projetado com funcionalidades que ajudam você a capturar suas ideias rapidamente, organizá-las de maneira eficaz e acessá-las sempre que necessário.
             </p>
@@ -36,17 +49,22 @@
         </section>
 
         <section id="Junte-se">
-            <h2>Junte-se a Nós</h2>
+            <h2 class="titulo">Junte-se a Nós</h2>
             <p>
                 Está pronto para transformar o caos criativo em clareza e foco? Faça sua primeira anotação.
             </p>
 
-            <button id="btn-voltar" onclick="window.location.href='/main.html';">Ir para outra página</button>
+            <button id="btn-voltar" onclick="window.location.href='main.html';">Ir para outra página</button>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2023 Anota Aí - Desenvolvido com ❤️.</p>
+        <p style="margin-right: auto;">&copy; 2023 Anota Aí - Desenvolvido com ❤️.</p>
+        <div class="textN">
+            <a class="nomes" href="https://github.com/LyanRodrigues">Thomas Leon Rodrigues</a>
+            <a class="nomes" href="https://github.com/danieldpa">Daniel de Paula</a>
+            <a class="nomes" href="https://github.com/pablogsautner">Pablo Gabriel Sautner</a>
+        </div>
     </footer>
 
 </body>

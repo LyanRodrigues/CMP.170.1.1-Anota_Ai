@@ -83,7 +83,6 @@ body {
     overflow: hidden;
     background-color: #3b5c81;
 }
-
 main {
     height: 100vh;
     display: flex;
@@ -94,8 +93,10 @@ main {
     flex-grow: 0;
     padding: 70px;
     background-color: rgb(255, 255, 255);
-    border: 1px solid black;
+    box-shadow: -10px 0px 15px rgba(0, 0, 0, 0.1), 10px 0px 15px rgba(0, 0, 0, 0.1);
+    /* Sombra à esquerda (primeiro conjunto) e à direita (segundo conjunto) */
 }
+
 
 .frase {
     font-family: sans-serif;
@@ -187,6 +188,7 @@ button {
     background: none;
     color: #3d8bca;
     margin-top: 50px;
+    margin-bottom: 50px;
     width: 10rem;
     padding: 8px;
     border-radius: 10px;
@@ -215,4 +217,70 @@ button#changePsw {
     padding: 8px;
     border-radius: 10px;
     display: inline-block;
+}
+
+.link{
+    color: #984aff;
+    font-size: 14px;
+    background: none;
+    border: none;
+    margin: 0;
+    padding-top: 10px;
+    text-decoration: none;
+    text-align: center;
+}
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #3b5c81;
+    /* Darker background color for the footer */
+    color: #fff;
+    /* Text color for the footer */
+    padding: 10px;
+    /* Adjust padding as needed */
+    text-align: right;
+}
+
+
+footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    width: var(--screen-width);
+    height: 50px;
+    flex: none;
+    align-self: stretch;
+    flex-grow: 0;
+    box-shadow: 0px -4px 8px rgba(0, 0, 0, 0.1); /* Adiciona sombra na parte superior */
+}
+
+footer .textN {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 24px;
+    gap: 24px;
+    height: 42px;
+    background: var(--yellow);
+    border-radius: 100px;
+}
+
+footer a.nomes {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: var(--white);
+    text-decoration: none;
+}
+
+footer a.nomes:hover{
+    color:  rgb(35, 125, 141);
 }

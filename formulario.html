@@ -5,17 +5,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/formulario.css">
+    <link rel="stylesheet" href="css/formulario.css">
     <script type="text/=javascript" src="js/login.js"></script>
     <title>Cadastro do Usuário</title>
 
 </head>
 
 <body>
-    <h1>Cadastro do Usuário</h1>
-
+    <header>
+        <a class="logo" href="main.html">
+            <img src="media/writing.png" alt="Logo">
+        </a>
+        <div class="frase">
+            Anota Aí
+        </div>
+        <a class="user-square" href="formulario.html">
+            <img src="media/user.png" alt="User" class="user-image">
+        </a>
+    </header>
+    <main>
+        <label class="titulo">Cadastro</label><br>
     <form>
-        <label class="titulo">Cadastro</label>
 
         <label for="nome">Nome:</label>
         <input type="text" name="" id="usernameNew" placeholder="Usuário" aria-label="Login"><br><br>
@@ -42,10 +52,19 @@
         <label for="senha">Senha:</label>
         <input type="password" name="" id="passwordNew" placeholder="Senha" aria-label="Senha"><br><br>
 
-        <section>
+        <section style="text-align: center;">
             <button onclick="registerUser()">Cadastrar</button>
         </section>
     </form>
+</main>
+<footer>
+    <div class="textN">
+        <a class="nomes" href="https://github.com/LyanRodrigues">Thomas Leon Rodrigues</a>
+        <a class="nomes" href="https://github.com/danieldpa">Daniel de Paula</a>
+        <a class="nomes" href="https://github.com/pablogsautner">Pablo Gabriel Sautner</a>
+    </div>
+    <p style="margin-left: auto;">&copy; 2023 Anota Aí - Desenvolvido com ❤️.</p>
+</footer>
 
 </body>
 
