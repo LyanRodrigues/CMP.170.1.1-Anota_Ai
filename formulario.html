@@ -26,10 +26,15 @@
     <main>
         <label class="titulo">Cadastro</label><br>
     <form>
-
-        <label for="nome">Nome:</label>
-        <input type="text" name="" id="usernameNew" placeholder="Usuário" aria-label="Login"><br><br>
-
+        <section class="textfield" id="registerLogin">
+            <input type="text" name="" id="username" placeholder="Usuário" onfocus="validate('username', 'erroUser')">
+            <p class="errorRegsLogin" id="erroUser">O usuário deve ter no minimo 4 caracteres [a-z,A-z,0-9,_]</p>
+            <input type="password" name="" id="password" placeholder="Senha" onfocus="validate('password', 'erroPassword')">
+            <i class="fa-solid fa-eye" id="eyeicon" onclick="showPassword('eyeicon', 'password')"></i>
+            <p class="errorRegsLogin" id="erroPassword">A senha deve ter no minimo 8 caracteres [a-z,A-z,0-9,_]</p>
+            <br><input type="checkbox" name="" id="myCheckBox">
+            <label>Lembre-me</label>
+        </section>
         <label for="email">Email:</label>
         <input type="email" id="email" name="email"><br><br>
 
@@ -49,9 +54,7 @@
         <label for="noticias">Receber notícias por e-mail</label><br><br>
 
 
-        <label for="senha">Senha:</label>
-        <input type="password" name="" id="passwordNew" placeholder="Senha" aria-label="Senha"><br><br>
-
+        
         <section style="text-align: center;">
             <button onclick="registerUser()">Cadastrar</button>
         </section>

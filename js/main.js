@@ -60,7 +60,7 @@ const postsKey = 'posts';
               }
             
               if (post.text == null || post.text == '') {
-                warningElement.innerHTML = 'Escreva algo no post-it';
+                warningElement.innerHTML = 'ATENÇÃO: não é possivel anotar em branco';
                 warningElement.style.display = 'block';
                 return false;
               }
