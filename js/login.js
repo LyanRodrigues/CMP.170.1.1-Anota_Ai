@@ -100,11 +100,11 @@ function changePassword() {
 function registerUser() {
     let registerUsername = document.getElementById("username").value
     let registerPassword = document.getElementById("password").value
-    let checkBox = document.getElementById("myCheckBox")
     let newUser = {
         username: registerUsername,
         password: registerPassword
     }
+
     if (JSON.parse(sessionStorage.getItem("user")) != null && JSON.parse(sessionStorage.getItem("user")).username == registerUsername) {
         alert("Informe os dados de autenticação")
         clearInput()
@@ -132,14 +132,11 @@ function registerUser() {
             return
         }
     }
-    if (checkBox.checked) {
-        alert("Cadastro efetuado com sucesso")
-        objPeople.push(newUser)
-    } else {
-        alert("Cadastro efetuado com sucesso")
-        objPeople.push(newUser)
-        clearInput()
-    }
+   
+
+    alert("Cadastro efetuado com sucesso")
+    objPeople.push(newUser)
+
     console.log(objPeople)
 }
 

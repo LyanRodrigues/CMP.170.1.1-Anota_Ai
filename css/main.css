@@ -17,6 +17,13 @@ header {
     /* Add a subtle shadow */
 }
 
+/* estilos.css */
+.user-area img {
+    width: 50px;
+    height: 50px;
+}
+
+
 /* Style the circular logo */
 .logo {
     width: 50px;
@@ -290,6 +297,10 @@ form .form-postit-buttons button {
 }
 
 #btn-limpar {
+	background-color: #3d8bca;
+}
+
+#btn-voltar {
 	background-color: #3d8bca;
 }
 
