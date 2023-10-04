@@ -1,6 +1,6 @@
 * {
-	padding: 0;
-	margin: 0;
+    padding: 0;
+    margin: 0;
 }
 header {
     position: fixed;
@@ -8,30 +8,20 @@ header {
     left: 0;
     right: 0;
     background-color: #3b5c81;
-    /* Darker background color for the header */
     z-index: 999;
-    /* Adjust the z-index if needed */
     display: flex;
     align-items: center;
     justify-content: space-between;
-    /* Create space between elements */
     padding: 10px 20px;
-    /* Add padding around the header content */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    /* Add a subtle shadow */
-    
 }
 
-/* Style the circular logo */
 .logo {
     width: 50px;
     height: 50px;
     background-color: #f1f1f1;
-    /* Green color for the circular logo */
     border-radius: 50%;
-    /* Make it circular */
     margin-right: 20px;
-    /* Add space between the logo and other header content */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -39,38 +29,29 @@ header {
 
 .logo img {
     width: 80%;
-    /* Adjust the size of the logo image */
     height: auto;
 }
 
-/* Style the header text */
 .header-text {
     color: #bbbbbb;
-    /* Text color for the header text */
     font-size: 18px;
     font-weight: bold;
 }
 
-/* Style the user square */
 .user-square {
     width: 50px;
     height: 50px;
     background-color: #f1f1f1;
-    /* Blue color for the user square */
     border-radius: 5px;
-    /* Rounded corners */
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-/* Style the user image inside the square */
 .user-image {
     width: 80%;
-    /* Adjust the size of the user image */
     height: auto;
     border-radius: 50%;
-    /* Make it circular */
 }
 
 body {
@@ -83,6 +64,7 @@ body {
     overflow: hidden;
     background-color: #3b5c81;
 }
+
 main {
     height: 100vh;
     display: flex;
@@ -94,9 +76,7 @@ main {
     padding: 70px;
     background-color: rgb(255, 255, 255);
     box-shadow: -10px 0px 15px rgba(0, 0, 0, 0.1), 10px 0px 15px rgba(0, 0, 0, 0.1);
-    /* Sombra à esquerda (primeiro conjunto) e à direita (segundo conjunto) */
 }
-
 
 .frase {
     font-family: sans-serif;
@@ -104,11 +84,8 @@ main {
     font-weight: 800;
     font-size: 50px;
     line-height: 90px;
-    
     text-align: center;
-
     color: #ffffff;
-
     flex: none;
     order: 0;
     flex-grow: 0;
@@ -120,10 +97,8 @@ form {
     align-items: center;
     padding: 10px;
     gap: 10px;
-
     width: 325px;
     height: 470px;
-
     flex: none;
     order: 1;
     flex-grow: 0;
@@ -161,7 +136,7 @@ form i {
     margin-top: 5px;
 }
 
-.textfield input#username,.textfield input#verifyUser {
+.textfield input#username, .textfield input#verifyUser {
     margin-left: 7px;
 }
 
@@ -195,9 +170,9 @@ button {
     cursor: pointer;
 }
 
-button:hover{
+button:hover {
     background-color: rgb(236, 236, 236);
-    color:  #51ceff;
+    color: #51ceff;
 }
 
 button#senhaEsq {
@@ -219,7 +194,7 @@ button#changePsw {
     display: inline-block;
 }
 
-.link{
+.link {
     color: #984aff;
     font-size: 14px;
     background: none;
@@ -229,20 +204,17 @@ button#changePsw {
     text-decoration: none;
     text-align: center;
 }
+
 footer {
     position: fixed;
     bottom: 0;
     left: 0;
     right: 0;
     background-color: #3b5c81;
-    /* Darker background color for the footer */
     color: #fff;
-    /* Text color for the footer */
     padding: 10px;
-    /* Adjust padding as needed */
     text-align: right;
 }
-
 
 footer {
     display: flex;
@@ -254,7 +226,7 @@ footer {
     flex: none;
     align-self: stretch;
     flex-grow: 0;
-    box-shadow: 0px -4px 8px rgba(0, 0, 0, 0.1); /* Adiciona sombra na parte superior */
+    box-shadow: 0px -4px 8px rgba(0, 0, 0, 0.1);
 }
 
 footer .textN {
@@ -281,6 +253,6 @@ footer a.nomes {
     text-decoration: none;
 }
 
-footer a.nomes:hover{
-    color:  rgb(35, 125, 141);
+footer a.nomes:hover {
+    color: rgb(35, 125, 141);
 }
